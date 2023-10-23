@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden
+}
+
+html {
+    /* Base styles go here */
+    text-size-adjust: 100%;
+    display: block;
+    height: 100%;
+    font-size: 1rem;
+}
+
+body {
+    font-family: 'Libre Baskerville', serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Forum', serif;
+    font-weight: 400;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    max-width: 90rem;
+    margin: 0 auto;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 80%;
+}
+
+.flex-container.third {
+    flex-basis: 20%;
+    margin: 0 5px;
+}
+
+.flex-row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-grow: 1;
+}
+
+.news-box {
+    width: 100%;
+    padding: 1rem;
+}
+
+.third .news-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.third .news-box .news-heading {
+    font-size: 1.063rem;
+}
+
+.third .news-box img {
+    max-width: 30%;
+    max-height: 30%;
+    order: 2;
+}
+
+#box4 {
+    display: flex;
+    align-items: center;
+}
+
+#box4 img {
+    max-width: 30%;
+    max-height: 30%;
+    order: 2;
+}
+
+.flex-row .news-box:first-child {
+    width: 40%;
+}
+
+.news-box img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.news-box .news-tag {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: rgb(219, 51, 52);
+}
+
+.news-heading {
+    font-size: 1.375rem;
+}
+
+.news-heading.primary {
+    font-size: 2.25rem;
+}
+
+.news-content {
+    font-size: 1.063rem;
+    margin-bottom: 0.5rem;
+}
+
+.news-author {
+    font-size: 0.938rem;
+    font-weight: 600;
+}
+
+.border-top {
+    border-top: 0.063rem solid rgb(229, 229, 229);
+}
+
+.border-bottom {
+    border-bottom: 0.063rem solid rgb(229, 229, 229);
+}
+
+.border-right {
+    border-right: 0.063rem solid rgb(229, 229, 229);
+}
+
+.border-left {
+    border-left: 0.063rem solid rgb(229, 229, 229);
+}
+
+/* For small screens */
+@media (max-width: 768px) {
+    .flex-row {
+        flex-direction: column;
+    }
+
+    .flex-row .news-box:first-child {
+        width: 100%;
+    }
+
+    .main-container {
+        flex-direction: column;
+    }
+
+    #box3 {
+        order: -2;
+    }
+
+    #box4 {
+        display: block;
+    }
+
+    #box4 img {
+        max-width: 100%;
+        max-height: 100%;
+        order: 1;
+    }
+}
