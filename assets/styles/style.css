@@ -7,6 +7,7 @@
     --highlightColor: rgb(219, 51, 52);
     --secondaryColor: #CC4949;
     --description: #333;
+    --buttonColor: #0787ca;
 
     /* spacing */
     --padding: 8px;
@@ -33,6 +34,7 @@ html {
 body {
     font-family: 'Libre Baskerville', serif;
     color: var(--description);
+    height: auto;
 }
 
 h1,
@@ -82,6 +84,40 @@ nav a {
     font-size: var(--secondaryHeader);
     font-weight: bold;
     font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.secondary-navigation {
+    position: absolute;
+    right: 0;
+    top: 30%;
+    display: flex;
+    text-decoration: none;
+    padding: 0 var(--padding);
+    font-size: 0.75rem;
+    color: #000;
+    font-size: var(--secondaryHeader);
+    font-weight: bold;
+    font-family: 'Hanken Grotesk', sans-serif;
+    align-items: center;
+}
+
+.secondary-navigation a{
+    margin-right: 1rem;
+}
+
+.secondary-navigation .button{
+    background: var(--buttonColor);
+    border-radius: 2px;
+    color: #fff;
+    display: block;
+    font-family: "Graphik Web","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    height: 100%;
+    line-height: 30px;
+    text-align: center;
+    text-decoration: inherit;
+   padding: 0 15px;
 }
 
 .main-container,
@@ -391,8 +427,12 @@ textarea {
         display: block;
     }
 
-    form{
+    form {
         padding: 1rem;
+    }
+
+    .secondary-navigation{
+        display: none;
     }
 
 }
