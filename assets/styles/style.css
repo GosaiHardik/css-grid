@@ -101,23 +101,23 @@ nav a {
     align-items: center;
 }
 
-.secondary-navigation a{
+.secondary-navigation a {
     margin-right: 1rem;
 }
 
-.secondary-navigation .button{
+.secondary-navigation .button {
     background: var(--buttonColor);
     border-radius: 2px;
     color: #fff;
     display: block;
-    font-family: "Graphik Web","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Graphik Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 12px;
     font-weight: 500;
     height: 100%;
     line-height: 30px;
     text-align: center;
     text-decoration: inherit;
-   padding: 0 15px;
+    padding: 0 15px;
 }
 
 .main-container,
@@ -312,7 +312,7 @@ form h1 {
     color: #fff;
 }
 
-.feedback-input {
+.feedback-input, select {
     color: white;
     font-weight: 500;
     font-size: 1rem;
@@ -327,8 +327,21 @@ form h1 {
     outline: 0;
 }
 
+select{
+    background-color: rgb(18, 18, 18);
+}
+
 .feedback-input:focus {
     border: 2px solid var(--secondaryColor);
+}
+
+fieldset{
+    padding: 1rem;
+    margin: 0;
+}
+
+legend{
+    color:#fff;
 }
 
 textarea {
@@ -337,19 +350,25 @@ textarea {
     resize: vertical;
 }
 
-[type="submit"] {
+[type="submit"],
+[type="reset"] {
     width: 100%;
     background: var(--secondaryColor);
     border-radius: 5px;
     border: 0;
     cursor: pointer;
-    color: white;
+    color: #fff;
     font-size: 1.25rem;
     padding-top: 10px;
     padding-bottom: 10px;
     transition: all 0.3s;
     margin-top: -4px;
     font-weight: 700;
+    margin: 0.5rem 0;
+}
+
+form label {
+    color: #fff;
 }
 
 [type="submit"]:hover {
@@ -431,7 +450,7 @@ textarea {
         padding: 1rem;
     }
 
-    .secondary-navigation{
+    .secondary-navigation {
         display: none;
     }
 
